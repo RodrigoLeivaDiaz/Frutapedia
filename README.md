@@ -1,5 +1,5 @@
 <p align="center">
-<img src="![Sin título](https://github.com/RodrigoLeivaDiaz/Frutapedia/assets/107962231/ac996c5f-bbee-447c-b2b5-ec7e68cb46e2)" #vitrinedev/>
+<img src="https://github.com/RodrigoLeivaDiaz/Frutapedia/assets/107962231/ac996c5f-bbee-447c-b2b5-ec7e68cb46e2" #vitrinedev/>
 </p>
 
 <hr>
