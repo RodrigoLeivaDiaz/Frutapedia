@@ -11,7 +11,7 @@
 <div align="center">
   <h2 style="font-family: 'Georgia', serif; font-size: 24px; font-weight: normal;">Descripción del proyecto 📊</h2>
 </div>
-<p align="justify">Este proyecto es un Recetario de platos de Sudamerica. Permite visualizar y buscar información relacionada con recetas de los paises y ver un detalle que incluye los ingredientes. El objetivo principal tener las recetas al alcance de la mano, a traves de tu celular en todo momento.  </p>
+<p align="justify">Este proyecto es una enciclopedia de frutas. Permite visualizar información relacionada con la nutrición de dicha fruta y ver un detalle que incluye azucares y grasas entre otros. El objetivo principal es tenes una guia de frutas con su valor nutricional, a traves de tu celular en todo momento.  </p>
 
 <hr>
 
@@ -21,7 +21,7 @@
 <details>
     <summary>Click Aquí para Detalle ↩️</summary>
     <br>
-   <p align="justify">El proyecto se encuentra actualmente en desarrollo. Se han implementado las funcionalidades básicas para visualizar las recetas. A futuro, se planea agregar mejoras esteticas y funcionabilidades nuevas. 🔨 </p>
+   <p align="justify">El proyecto se encuentra actualmente en desarrollo. Se han implementado las funcionalidades básicas para visualizar las frutas. A futuro, se planea agregar mejoras esteticas y funcionabilidades nuevas. 🔨 </p>
    </details>
    <hr>
    
