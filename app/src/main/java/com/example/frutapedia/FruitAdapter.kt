@@ -14,7 +14,6 @@ class FruitAdapter(private var fruitsApiList: List<FruitsApi>, val context: Cont
     RecyclerView.Adapter<FruitAdapter.ViewHolder>() {
 
     lateinit var onItemClickListener: (FruitsApi) -> Unit
-
     inner class ViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
         private val tvName: TextView = view.findViewById(R.id.textViewNane)
         private val tvImage: ImageView = view.findViewById(R.id.imageViewFrutas)
@@ -22,7 +21,6 @@ class FruitAdapter(private var fruitsApiList: List<FruitsApi>, val context: Cont
         fun bind(fruits: FruitsApi) {
             tvName.text = fruits.name
             Glide.with(context).load(fruits.image).into(tvImage)
-
             view.setOnClickListener {
                 onItemClickListener(fruits)
             }

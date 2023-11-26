@@ -20,19 +20,13 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
         recyclerView = findViewById(R.id.recyclerfruit)
-
         recyclerView.layoutManager = GridLayoutManager(this,2)
-
         adapter = FruitAdapter(listfruit,this)
-
         recyclerView.adapter = adapter
-
         adapter.onItemClickListener = {
             navegarDetalle(it)
         }
-
         getListaFrutas()
     }
 
@@ -40,10 +34,8 @@ class MainActivity : AppCompatActivity() {
         CoroutineScope(Dispatchers.IO).launch {
             val call = getRetrofit().create(ApiService::class.java).getListadoFrutas("fruit/all")
             val response = call.body()
-
             runOnUiThread {
                 if (call.isSuccessful) {
-
                     val listFrutas = response
                     listFrutas?.let {
                         listfruit.addAll(it.sortedBy { fruitsResponse -> fruitsResponse.id })
@@ -63,14 +55,12 @@ class MainActivity : AppCompatActivity() {
                             else -> fruitsResponse.image = R.drawable.orange
                         }
                     }
-
                 } else {
                     val error = call.errorBody().toString()
                     Log.e("error", error,)
                 }
                 adapter.notifyDataSetChanged()
             }
-
         }
     }
 

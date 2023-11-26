@@ -19,9 +19,7 @@ class DetailActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail)
-
         val fruta = intent.getParcelableExtra<FruitsApi>("fruitsResponse")
-
         t_nombre = findViewById(R.id.t_nombre)
         t_imagen = findViewById(R.id.t_imagen)
         t_caloria = findViewById(R.id.textViewcalorias)
@@ -29,16 +27,12 @@ class DetailActivity : AppCompatActivity() {
         t_azucar = findViewById(R.id.textViewAzucar)
         t_carbo = findViewById(R.id.textViewCarbo)
         t_proteina = findViewById(R.id.textViewProteinas)
-
         t_nombre.text = fruta?.name
         t_caloria.text = "Calorias :" +fruta?.nutricion?.calories
         t_grasa.text =   "Grasas :" +fruta?.nutricion?.fat
         t_azucar.text = "Azucar :" +fruta?.nutricion?.sugar
         t_carbo.text = "Carbohidratos :" +fruta?.nutricion?.carbohydrates
         t_proteina.text = "Proteinas :" +fruta?.nutricion?.protein
-
-
-
         Glide.with(this).load(fruta?.image).into(t_imagen)
     }
 }
